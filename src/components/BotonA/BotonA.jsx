@@ -1,8 +1,10 @@
+import { handleClick } from './BotonA';
+
 export default function BotonA() {
 
     return (
       <>
-        <button>A</button>
+        <button onClick={handleClick}>A</button>
       </>
     )
   }

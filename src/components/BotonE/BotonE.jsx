@@ -1,8 +1,10 @@
+import { handleClick } from './BotonE';
+
 export default function BotonE() {
 
   return (
     <>
-      <button>E</button>
+      <button onClick={handleClick}>E</button>
     </>
   )
 }
