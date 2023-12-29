@@ -1,10 +1,18 @@
-import { handleClick } from './BotonE';
+import { useEffect } from "react";
+import { playSound, addKeyPressListener } from "./BotonE";
 
 export default function BotonE() {
+  useEffect(() => {
+    const removeKeyPressListener = addKeyPressListener(playSound);
+
+    return () => {
+      removeKeyPressListener();
+    };
+  }, []);
 
   return (
     <>
-      <button onClick={handleClick}>E</button>
+      <button onClick={playSound}>E</button>
     </>
-  )
+  );
 }
