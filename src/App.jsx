@@ -1,10 +1,5 @@
 import "./App.css";
-import BotonE from "./components/BotonE/BotonE.jsx";
-import BotonA from "./components/BotonA/BotonA.jsx";
-import BotonD from "./components/BotonD/BotonD.jsx";
-import BotonG from "./components/BotonG/BotonG.jsx";
-import BotonB from "./components/BotonB/BotonB.jsx";
-import BotonF from "./components/BotonF/BotonF.jsx";
+import Boton from "./components/Boton";
 
 function App() {
   return (
@@ -12,12 +7,12 @@ function App() {
       <main>
         <div>Acordes de Guitarra</div>
         <section>
-          <BotonE />
-          <BotonA />
-          <BotonD />
-          <BotonG />
-          <BotonB />
-          <BotonF />
+          <Boton tecla="A" sonido="../../../src/audio/acordeA.mp3" />
+          <Boton tecla="B" sonido="../../../src/audio/acordeB.mp3" />
+          <Boton tecla="D" sonido="../../../src/audio/acordeD.mp3" />
+          <Boton tecla="E" sonido="../../../src/audio/acordeE.mp3" />
+          <Boton tecla="F" sonido="../../../src/audio/acordeF.mp3" />
+          <Boton tecla="G" sonido="../../../src/audio/acordeG.mp3" />
         </section>
       </main>
     </>
